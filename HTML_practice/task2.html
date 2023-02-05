@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="main">
+      <form action="">
+        <table align="center" cellspacing="10px" cellpadding="10px">
+          <tr>
+            <td colspan="2">
+              <b>Register</b><br />
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora,
+              quas?
+            </td>
+            <!-- <td></td> -->
+          </tr>
+
+          <tr>
+            <td>
+              FIrst Name<br /><br>
+              <input class="name"
+                type="text"
+                required
+                placeholder="e.g John"
+                pattern="[a-zA-z]{3,8}"
+              />
+            </td>
+
+            <td>
+              Last Name<br /><br>
+              <input
+                type="text"
+                required
+                placeholder="e.g John"
+                pattern="[a-zA-z]{3,8}"
+              />
+            </td>
+          </tr>
+
+          <tr>
+            <td   colspan="2">
+              Email Address<br /><br>
+              <input class="email" type="email" placeholder="e.g john@your-domain.com" />
+            </td>
+
+            <!-- <td></td> -->
+          </tr>
+
+          <tr>
+            <td>
+              Phone Number<br /><br>
+              <input
+                type="text"
+                placeholder="+00 0000 000 0000"
+                required
+                pattern="[0-9]+"
+              />
+            </td>
+
+            <td>
+              Website<br /><br>
+              <input type="text" placeholder="e.g https://google.com" />
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              Password<br /><br>
+              <input type="password" placeholder="Your Password" />
+            </td>
+
+            <td>
+              Re-type Password<br /><br>
+              <input type="password" placeholder="Your password" />
+            </td>
+          </tr>
+
+          <tr>
+            <td colspan="2">
+              <input class="chekbox" type="checkbox" required />Lorem ipsum dolor sit amet
+              consectetur adipisicing elit. Iste, vitae.
+            </td>
+            <!-- <td></td> -->
+          </tr>
+
+          <tr>
+            <td colspan="2"><input class="submit" type="submit" value="Register"></td>
+            <!-- <td></td> -->
+          </tr>
+        </table>
+      </form>
+    </div>
+  </body>
+</html>

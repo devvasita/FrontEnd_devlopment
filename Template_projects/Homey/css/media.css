@@ -1,0 +1,90 @@
+@media (max-width : 500px)
+{
+
+
+/*-----------------------------------------Navbar Start -------------------------------- */
+
+  .nav{width: 100%;}
+  .nav .logo{width: 100%;}
+  .nav .logo .bar{display: block;}
+  .nav .menu{display: none;}
+  .nav .button{display: none;}
+
+  /*----------------------------------------- Slider Start -------------------------------- */
+    .slider{height: 50vh;}
+    .slider .main .image{height: 50vh;}
+    .slider .main .rate{padding: 10px 30px}
+    .slider .main .rate .content h1{ font-size: 25px;margin-right:50px;}
+    .slider .main .rate .content .sub{font-size: 14px;}  
+    .slider .main .image .icons{ gap: 20px;}
+    .slider .main .image .left_arrow{left: 0;}
+    .slider .main .image .right_arrow{right: 0;}
+        
+    
+    /*----------------------------------------- Slider End -------------------------------- */
+
+    /*----------------------------------------- Section Start -------------------------------- */
+
+    .section .info p{
+      width: 100%;
+      font-size: 14px;
+    }
+
+    .section .content{
+      width: 100%;
+      gap: 0;
+
+    }
+    .section .content .four{
+      width: 50%;
+      margin: 20px 0;
+      
+      
+    }
+    .content .fa-solid{
+      font-size: 40px;
+    }
+    
+    /*----------------------------------------- Section End -------------------------------- */
+
+
+    /*----------------------------------------- Second Slider Start--------------------------- */
+
+    .second_slider .three_sections .container{width: 80%;}
+
+    /*-------------- Service section ------------------ */
+
+    .service .info{width: 90%;height: 30vh;margin: 20px 0;}
+
+    /*------------------ Why us -------- */
+
+    .why_us{gap: 40px; padding: 20px;}
+    .why_us .left{width: 100%;}
+    .why_us .right{width: 100%;}
+
+    .why_us .middle{width: 100%;}
+    .why_us .right h1{left: 0%}
+    .why_us .right .paragraph{margin: 35% 0;}
+    .why_us .right .paragraph p{font-size: 16px;}
+
+    /*-------------- Quote Section ---------- */
+
+    .quote .content{gap: 30px;}
+    .quote .content .left{width: 100%;}
+    .quote .content .right{width: 100%;}
+    
+    /*------------- Footer Section -------- */
+
+    .footer{padding:30px 10px;gap: 30px;}
+    .footer .one{width: 100%;padding:0 ;}
+    .footer .two{width: 100%;padding: 0;}
+    .footer .three{width: 100%;padding: 0;}
+    .footer .four{width: 100%;}
+
+    /*--------------- End ----------- */
+    .end{padding: 0 10px;height: 10vh;}
+    .end .footer_End .left{width: 100%;font-size: 12px;}
+    .end .footer_End .right{width:40%;}
+    .end .footer_End a{font-size: 12px;}
+        
+}

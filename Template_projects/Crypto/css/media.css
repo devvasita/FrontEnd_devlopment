@@ -1,0 +1,314 @@
+@media (max-width : 500px){
+        
+    
+    nav .logo,.menu,.buttons{
+        display: none;
+        
+    }
+
+    nav .media{
+        display: block;
+    }
+
+    nav{
+        grid-template-columns: 1fr;
+        place-items: initial;
+        padding:0;
+    }
+
+    #section-one{
+        
+        
+
+        
+        grid-template-columns: 100% ;
+        place-items: center;
+        
+        padding:100px 10px;
+        
+    }
+
+    #section-one .content{
+        
+        padding: 30px 0;
+    }
+
+    
+    #section-one .content .inner-content{
+        place-items: center;
+    }
+
+    
+    
+    #section-one .content .inner-content h1{
+        text-align: center;
+        font-size: 30px;
+        
+    }
+
+    #section-one .content .inner-content h3{
+     font-size: 40px;   
+     text-align: center;
+     
+    }
+
+    #section-one .content .inner-content{
+        
+        place-items: center;
+    }
+
+    #section-one .content .inner-content .text{
+        font-size: 15px;
+        text-align: center;
+    }
+    #section-one .cross,.cross2{
+        display: none;
+    }
+
+    #section-one .content .inner-content .button a{
+        padding: 15px 30px;
+    }
+    
+        
+    
+    #section-one .content .inner-content .shape{
+        
+     height: 84px;
+    width: 275px;
+    left: -80px;
+    bottom: -30px;
+    
+    }
+
+    #section-one .content .inner-content .shape::before{
+
+    height: 96%;
+    width: 270px;
+
+    }
+    #section-one .image{
+        display: none;
+    }
+
+    /* Features Section  */
+
+    .features{
+        padding: 100px 0;
+    }
+
+    .features .main{
+        padding: 0;
+    }
+    
+    .features .main .first{
+        margin-bottom: 50px;
+    }
+
+    .features .main .first p{
+        display: none;
+    }
+    .features .main .first h1{
+        font-size: 25px;
+        font-weight: 800;
+        text-align: center;
+        
+    }
+    .features .main .second{
+        grid-template-columns: 1fr;
+
+        gap: 20px;
+    }
+
+        /*------------------------- Transcition section ------------------- */
+
+        .tranasactions{
+            grid-template-columns: 1fr;
+            gap: 20px;
+            padding: 100px 10px;
+        }
+
+        .tranasactions .image .coin{
+            width: 20%;
+        }
+        .tranasactions .content {
+            padding: 10px 0;
+            
+        }
+        .tranasactions .content h1{
+            font-size: 25px;
+            font-weight: 700;
+            text-align: center;
+        }
+        .tranasactions .content h4{
+            display: none;
+        }
+
+        .tranasactions .content p{
+            font-size: 12px;
+            text-align: center;
+        }
+
+        .tranasactions .content .four_button{
+            grid-template-columns: 1fr;
+        }
+
+        .tranasactions .content .button{
+            margin-left: 25%;
+        }
+
+        .tranasactions .content .button a{
+            padding: 15px 30px;
+        }
+
+        /*------------------------- Service Section ------------------- */
+
+        .services{padding: 50px 10px;gap: 30px;}
+      
+        .services .two_sections{
+            grid-template-columns: 1fr;
+            gap: 80px;
+            background-size: cover;
+        }
+
+        .services .info h4{display: none;}
+        .services .info h1{font-size: 20px;line-height: 20px;}
+        
+        .services .info p{
+            padding: 10px 0 10px;
+        }
+
+        .services .two_sections .content p{
+            font-size: 14px;
+            text-align: center;
+        }
+        .services .two_sections .content .button{
+            margin-left: 30%;
+        }
+
+        .services .two_sections .content .button a{
+            padding: 15px 34px;
+        }
+
+        .services .two_sections{
+            padding: 0;
+        }
+        .services .two_sections .content h1{
+            font-size: 20px;
+            text-align: center;
+            padding: 0;
+        }
+
+
+        /*------------------------- Work Section ------------------- */
+
+        .work{
+            padding: 10px;
+        }
+        .work .main{
+            grid-template-rows: auto;
+        }
+
+        .work .main .content h1{
+            font-size: 30px;
+        }
+
+        .work .main .image{
+            grid-template-columns: 1fr;
+            gap: 30px;
+            margin-top: 50px;
+        }
+        .work .main .content p{
+            padding: 10px 0px 10px;
+            font-size: 12px; 
+            word-spacing: 0px;  
+        }
+
+        .work .image .one .inner_content .rotate{
+           width: 90%; 
+        }
+        .work .image .one .inner_content .rotate .img1{margin-left: 80px;}
+        .work .image .one .inner_content .rotate .img2{margin-left: 110px;}
+        .work .image .one .inner_content .rotate .img3{margin-left: 110px;}
+        .work .image .one .inner_content .rotate .img4{margin-left: 80px;}
+    
+
+        .work .image .one .inner_content .information p{font-size: 14px;}
+
+        /*-------------CLinet Section ----------------------------------- */
+
+        .client{padding: 60px 10px;}
+        .client .main .story{
+            grid-template-columns: 1fr;
+        }
+        .client .main .story .button a{margin-left: 30%;}
+
+        .client .main .written_story{grid-template-columns: 1fr;}
+
+        .client .main .story .info h1{font-size: 25px;text-align: center;}
+
+        .client .main .story .button a{padding: 15px 34px;}
+
+
+
+        .client .main .written_story .image{width: 80%;height: 80%;margin:30px 40px;}
+
+        .client .main .written_story .user{padding: 0;}
+
+            /*------------------------- FAQ Section ------------------- */
+
+        .faq{grid-template-columns:1fr;padding: 50px 10px;}
+
+        .faq .content .title h3{display: none;}
+
+        .faq .content .title h1{font-size: 30px;text-align: center;}
+
+        .faq .content .title p{font-size: 14px;}
+
+        /* .faq .content .questions{background-color: red;} */
+
+        .faq .content .questions .menu{display: block;}
+
+        .faq .content .questions .menu li p{font-size: 12px;}
+
+        .faq .content .questions .menu li a{padding: 5px 0px 5px 30px;}
+        /*------------------------Subscribe Section ----------------------------------- */
+
+        .subscribe .main .title p{
+            padding: 10px 10px 20px;
+            font-size: 12px;
+            
+        }
+        .subscribe{
+            padding: 10px;
+        }
+
+        .subscribe .main .contact .box input{
+            height: 58px;
+            width: 96%;}
+        .subscribe .main .contact .box button{
+            right: 14px;
+            font-size: 14px;
+            padding: 10px 25px;
+            font-weight: 400;
+        }
+
+        .subscribe .main .title h1{
+            font-size: 18px;
+
+        }
+
+        /*------------------------Subscribe Section ----------------------------------- */
+
+        footer{padding: 50px 0px;}
+
+        footer .main .four_sections{grid-template-columns: 1fr;text-align: center;gap: 20px;}
+        footer .main .three_sections{grid-template-columns: 1fr;gap: 20px;}
+        footer .main .four_sections .four .textbox .inp {padding: 0 5px;}
+        
+
+
+
+}
+
+    
+

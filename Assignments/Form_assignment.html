@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        box-sizing: border-box;
+        outline: none;
+    }
+
+    h2 {
+        text-align: center;
+        color: red;
+        background-color: lightblue;
+        width: 60%;
+        margin: 0 auto;
+    }
+
+    .form-container {
+        background-color: lightcyan;
+        width: 60%;
+        margin: 20px auto;
+        padding: 20px 5px 5px 5px;
+    }
+
+    .title {
+        color: red;
+        font-weight: bold;
+    }
+
+    label {
+        position: relative;
+        color: blue;
+        font-weight: bold;
+    }
+
+    input {
+        border: 1px solid blue;
+    }
+
+    select {
+        color: blue;
+    }
+
+    label:not(.midname)::before {
+        content: '*';
+        color: red;
+        position: absolute;
+        top: 0px;
+        left: -10px;
+    }
+
+    .sec1 {
+        display: flex;
+        flex-flow: row wrap;
+    }
+
+    .sec1 div {
+        width: 100%;
+        text-align: center;
+        padding: 2px;
+    }
+
+    .sec1 .pass {
+        width: 99%;
+    }
+
+    .sec1 .conf {
+        width: 91.5%;
+    }
+
+    .sec1 input {
+        margin-left: 5px;
+    }
+
+    .sec2 {
+        display: flex;
+        flex-flow: row wrap;
+    }
+
+    .sec2 div {
+        width: 50%;
+        text-align: center;
+        padding: 2px;
+        align-self: center;
+    }
+
+    .sec2 .midname {
+        text-align: right;
+        width: 48.3%;
+    }
+
+    .sec2 input,
+    .sec2 select {
+        margin-left: 5px;
+    }
+
+    .sec2 .lastname {
+        width: 43.3%;
+        text-align: right;
+    }
+
+    .sec2 .resstatus {
+        text-align: center;
+        width: 43.5%;
+    }
+
+    .sec2 .country {
+        width: 39.8%;
+        text-align: right;
+    }
+
+    .sec2 .email {
+        text-align: right;
+        width: 48.3%;
+    }
+
+    .sec2 .mobileno {
+        width: 49.7%;
+    }
+
+    .sec3 {
+        display: flex;
+        flex-flow: row wrap;
+    }
+
+    .sec3 div {
+        width: 50%;
+        text-align: center;
+        padding: 2px;
+    }
+
+    .sec3 input,
+    .sec3 select {
+        margin-left: 5px;
+    }
+
+    .sec3 .accountno {
+        text-align: right;
+        width: 48%;
+    }
+
+    .sec3 .nname {
+        text-align: right;
+        width: 43.5%;
+    }
+
+    .sec3 .funds {
+        width: 46%;
+    }
+
+    .decl {
+        text-transform: uppercase;
+        margin: 16px 0 5px 0;
+    }
+
+    .lorem {
+        color: blue;
+        font-weight: bold;
+        margin: 0 0 16px 0;
+    }
+
+    button {
+        background-color: blue;
+        color: white;
+    }
+
+    .sub {
+        margin-left: 350px;
+    }
+</style>
+
+<body>
+    <h2>Individual Registration</h2>
+
+    <form action="#">
+        <div class="form-container">
+            <p class="title">User Particulars</p>
+            <div class="sec1">
+                <div>
+                    <label for="loginid">Login Id</label>
+                    <input type="text" id="loginid">
+                </div>
+                <div class="pass">
+                    <label for="pass">Password</label>
+                    <input type="password" id="pass">
+                </div>
+                <div class="conf">
+                    <label for="pass2">Confirm Password</label>
+                    <input type="password" id="pass2">
+                </div>
+            </div>
+            <p class="title">Personal Particulars</p>
+            <div class="sec2">
+                <div>
+                    <label for="sal">Salutation</label>
+                    <select name="salselect" id="sal">
+                        <option value="">Select</option>
+                        <option value="Mr">Mr</option>
+                        <option value="Miss">Miss</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="firstname">First Name</label>
+                    <input type="text" id="firstname">
+                </div>
+                <div class="midname">
+                    <label for="middname" class="midname"> Middle Name</label>
+                    <input type="text" id="middname">
+                </div>
+                <div class="lastname">
+                    <label for="lastname">Last Name</label>
+                    <input type="text" id="lastname">
+                </div>
+                <div class="resstatus">
+                    <label for="resstat">Residential Status</label>
+                    <select name="resselect" id="resstat">
+                        <option value="">Select</option>
+                        <option value="Owner">Owner</option>
+                        <option value="Rental">Rental</option>
+                    </select>
+                </div>
+                <div class="country">
+                    <label for="conselect">Country</label>
+                    <select name="country" id="conselect">
+                        <option value="">Select</option>
+                        <option value="india">India</option>
+                        <option value="othercountry">Other Country</option>
+                    </select>
+                </div>
+                <div class="email">
+                    <label for="emailid">Email-id</label>
+                    <input type="email" id="emailid">
+                </div>
+                <div class="mobileno">
+                    <label for="mobno">Mobile Number</label>
+                    <input type="number" id="mobno">
+                </div>
+            </div>
+            <p class="title">Account Particulars</p>
+            <div class="sec3">
+                <div class="accountno">
+                    <label for="accno">15 Digit Account No</label>
+                    <input type="text" id="accno">
+                </div>
+                <div class="nname">
+                    <label for="nickname">Nick Name</label>
+                    <input type="text" id="nickname">
+                </div>
+                <div class="funds">
+                    <label for="fundselect">Fund Transfer</label>
+                    <select name="fund" id="fundselect">
+                        <option value="">Select</option>
+                        <option value="RTGS">RTGS</option>
+                        <option value="NEFT">NEFT</option>
+                    </select>
+                </div>
+            </div>
+            <p class="title decl">Declaration</p>
+            <p class="lorem">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis delectus modi ut nemo
+                corporis cum aut dolor veritatis illo, nihil natus distinctio at qui eaque reiciendis! Similique vel
+                repellat voluptatibus!</p>
+            <button type="submit" class="sub">Submit</button>
+            <button type="reset" class="res">Reset</button>
+
+    </form>
+    </div>
+</body>
+
+</html>

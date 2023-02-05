@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHope_now_hover</title>
+
+    <style>
+        .container a{
+            color: rgb(231, 17, 17);
+            letter-spacing: 3px;
+            text-decoration: none;
+            
+            
+            padding: 15px;
+            margin: 300px 300px;
+            
+            
+        }
+        .dev{
+            
+            display: inline-block;
+            background-color: aqua;
+            position: relative;
+            transition: 1s;
+            /* overflow: hidden; */
+
+        }
+
+        .dev::before{
+            content: "";
+            position: absolute;
+            /* background-color: black; */
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+          
+            
+              
+        }
+
+        .dev:hover::before{
+            border: 4px solid aqua;
+            top: -8px;
+            right: -8px;
+            bottom: -8px;
+            left: -8px;
+          
+        }
+
+
+
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+
+        <a class="dev" href="google.com">Shop Now</a>
+
+
+    </div>
+
+
+</body>
+</html>
