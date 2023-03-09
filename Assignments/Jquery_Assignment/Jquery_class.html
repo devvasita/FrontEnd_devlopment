@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+	<style type="text/css">
+		.xyz 
+		{
+			color: red;
+			font-size: 20px;
+			background-color: lightblue;
+			height: 300px;
+		}
+	</style>
+</head>
+<body>
+
+
+	<h1>Heading</h1>
+
+	<button class="b1">Add CSS</button>
+	<button class="b2">Remove CSS</button>
+	<button class="b3">Add/Remove CSS</button>
+
+	<script type="text/javascript">
+		
+		
+		$('.b1').click(()=>{
+
+			$('h1').addClass('xyz');
+		})
+
+
+		$('.b2').click(function(){
+
+			$('h1').removeClass('xyz');
+		})
+
+
+
+		$('.b3').click(function(){
+
+			$('h1').toggleClass('xyz');
+		})
+
+
+	</script>
+
+</body>
+</html>
